@@ -2,20 +2,100 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background: #003554;
-    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(295deg, rgba(16, 209, 100, 1) 0%, rgba(114, 255, 182, 1) 100%);
 }
 
 .card {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
-    background: linear-gradient(295deg, rgba(16, 209, 100, 1) 0%, rgba(114, 255, 182, 1) 100%);
-    margin: 100px auto 0;
-    border: none;
-    border-radius: 20px;
-    padding: 20px;
+    background: white;
+    margin: 100px auto 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.title h2 {
+    display: flex;
+    gap: 1rem;
+    color: rgb(48, 255, 148);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title h2 img {
+    height: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #edeef0;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.header input {
+    flex: 1;
+    padding: 13px 20px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 15px;
+}
+
+.header button {
+    border: none;
+    background: linear-gradient(295deg, rgba(16, 209, 100, 1) 0%, rgba(114, 255, 182, 1) 100%);
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+ul li {
+    color: rgb(116, 116, 116);
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(./images/check.png);
 }
