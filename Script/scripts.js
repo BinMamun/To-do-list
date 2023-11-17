@@ -1,10 +1,13 @@
+import { saveToLocal, showList } from "./localData.js"
+
 const inputBox = document.querySelector(".js-input-box");
-let listContainer = document.querySelector(".js-list-container");
+export let listContainer = document.querySelector(".js-list-container");
 const message = document.querySelector(".js-message");
 
 const addButton = document.querySelector(".js-add-new-button");
 
-listContainer.innerHTML = JSON.parse(localStorage.getItem("taskList")); //getting from localStorage
+
+showList(); // display the previous list data after loading the page.
 
 addButton.addEventListener("click", () => {
   if (inputBox.value === "") {
@@ -53,6 +56,3 @@ inputBox.addEventListener("keydown", (event) => {
   }
 })
 
-function saveToLocal() {
-  localStorage.setItem("taskList", JSON.stringify(listContainer.innerHTML));
-}
