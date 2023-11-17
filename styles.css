@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #003554;
+    font-family: sans-serif;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(295deg, rgba(16, 209, 100, 1) 0%, rgba(114, 255, 182, 1) 100%);
+    margin: 100px auto 0;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
