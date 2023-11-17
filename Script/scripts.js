@@ -6,7 +6,6 @@ const message = document.querySelector(".js-message");
 
 const addButton = document.querySelector(".js-add-new-button");
 
-
 showList(); // display the previous list data after loading the page.
 
 addButton.addEventListener("click", () => {
