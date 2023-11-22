@@ -15,8 +15,10 @@ addButton.addEventListener("click", () => {
   if (inputBox.value === "") {
     message.innerHTML = "Input field is empty";
     message.classList.add("message");
-  }
-  else {
+  } else if (dateInput.value === "") {
+    message.innerHTML = "Date field is empty";
+    message.classList.add("message");
+  } else {
     const li = document.createElement("li");
     li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
@@ -54,8 +56,10 @@ dateInput.addEventListener("keydown", (event) => {
     if (inputBox.value === "") {
       message.innerHTML = "Input field is empty";
       message.classList.add("message");
-    }
-    else {
+    } else if (dateInput.value === "") {
+      message.innerHTML = "Date field is empty";
+      message.classList.add("message");
+    } else {
       const li = document.createElement("li");
       li.innerHTML = inputBox.value;
       listContainer.appendChild(li);
