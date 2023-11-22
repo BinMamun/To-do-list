@@ -11,6 +11,7 @@ showList(); // display the previous list data after loading the page.
 addButton.addEventListener("click", () => {
   if (inputBox.value === "") {
     message.innerHTML = "Input field is empty";
+    message.classList.add("message");
   }
   else {
     const li = document.createElement("li");
@@ -40,6 +41,7 @@ inputBox.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     if (inputBox.value === "") {
       message.innerHTML = "Input field is empty";
+      message.classList.add("message");
     }
     else {
       const li = document.createElement("li");
