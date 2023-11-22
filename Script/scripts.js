@@ -50,7 +50,6 @@ listContainer.addEventListener("click", (event) => {
 }, false);
 
 
-
 dateInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     if (inputBox.value === "") {
@@ -81,4 +80,3 @@ dateInput.addEventListener("keydown", (event) => {
     saveToLocal(); //saving to loacal Storage
   }
 })
-
