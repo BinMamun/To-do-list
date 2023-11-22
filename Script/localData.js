@@ -1,4 +1,4 @@
-// import { listContainer } from "./scripts.js";
+import { listContainer } from "./scripts.js";
 
 // export function saveToLocal() {
 //   localStorage.setItem("taskList", listContainer.innerHTML);
